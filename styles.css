@@ -280,5 +280,102 @@ p {
     max-width: 33.333%;
   }
 }
- /* MOBILE MEDIA QUERY */
- /* WRITE YOUR CODE BELOW THIS LINE */
+
+/* MOBILE MEDIA QUERY */
+/* 0px – 767px
+   Goal: optimize small screens for legibility,
+   touch targets, and stacked layout */
+@media (max-width: 767px) {
+
+  .row g-3 p-5 justify-content-center {
+    padding: 0;
+  }
+  .hero-image {
+    height: 60vh;
+    background-position: center top;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0 1rem;
+  }
+
+  #main {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .col,
+  #Why-Smalls .col-md-6,
+  #How_it_works .col-md-6,
+  #say_hello .col-md-6,
+  #gallery .col-6,
+  #gallery .col-md-4,
+  footer .col-lg-6,
+  footer .col-md-4 {
+    display: block;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+
+  #Why-Smalls,
+  #How_it_works,
+  #say_hello {
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  #Why-Smalls img,
+  #How_it_works img,
+  #say_hello img {
+    max-height: none;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .description {
+    padding: 1.5rem 1rem;
+  }
+
+  .description h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .description p,
+  .description ul {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  #gallery figure {
+    height: 220px;
+  }
+
+  .benefits {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .feature-col {
+    padding: 1rem 0.75rem;
+  }
+
+  #How_it_works .row,
+  #Why-Smalls .row,
+  #say_hello .row {
+    flex-direction: column;
+  }
+
+.container.text-center.m-5{
+  margin: 0;
+}
+
+}
